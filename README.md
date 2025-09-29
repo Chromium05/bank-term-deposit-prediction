@@ -7,11 +7,11 @@ Dilengkapi dengan **tampilan UI berbasis Flask** sehingga user dapat langsung me
 
 ## ✨ Fitur Utama
 
-* 🔮 Prediksi apakah nasabah akan melakukan deposito atau tidak
-* 📊 Menampilkan **probabilitas kedua kelas** (deposit vs tidak deposit)
-* 📈 Halaman evaluasi model → akurasi + classification report
-* 🌐 UI sederhana dengan **TailwindCSS** + form dropdown untuk input kategorikal
-* 📂 Dataset: **Bank Marketing Dataset** (`bank.xlsx`)
+* Prediksi apakah nasabah akan melakukan deposito atau tidak
+* Menampilkan **probabilitas kedua kelas** (melakukan deposit atau tidak)
+* Halaman evaluasi model lengkap dengan akurasi classification report
+* UI sederhana dengan **TailwindCSS** + form dropdown untuk input kategorikal
+* Dataset: **Bank Marketing Dataset** (`bank.xlsx`)
 
 ---
 
