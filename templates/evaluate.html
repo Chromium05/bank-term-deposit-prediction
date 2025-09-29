@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluasi Model</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-8">
+    <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">Evaluasi Model Decision Tree</h2>
+
+    <p class="mb-4"><strong>Akurasi:</strong> {{ accuracy }}%</p>
+
+    <h3 class="text-xl font-semibold mb-2">Classification Report:</h3>
+    <pre class="bg-gray-100 p-4 rounded-md overflow-x-auto">{{ report }}</pre>
+
+    <div class="mt-4">
+      <a href="/" class="text-blue-600 hover:underline">← Kembali ke Prediksi</a>
+    </div>
+  </div>
+</body>
+</html>

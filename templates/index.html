@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediksi Deposito Bank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-8">
+    <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">Prediksi Deposito Bank</h2>
+
+    <div class="text-right mb-4">
+      <a href="/evaluate" class="text-blue-600 hover:underline">Lihat Evaluasi Model</a>
+    </div>
+
+    <form method="POST" class="grid grid-cols-2 gap-4">
+      <!-- Numerik -->
+      <div>
+        <label class="block text-sm font-medium">Umur</label>
+        <input type="number" name="age" class="mt-1 w-full border rounded-md p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Saldo (Balance in Euros)</label>
+        <input type="number" name="balance" class="mt-1 w-full border rounded-md p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Hari</label>
+        <input type="number" name="day" class="mt-1 w-full border rounded-md p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Durasi Panggilan</label>
+        <input type="number" name="duration" class="mt-1 w-full border rounded-md p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Jumlah Kampanye</label>
+        <input type="number" name="campaign" class="mt-1 w-full border rounded-md p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Pdays</label>
+        <input type="number" name="pdays" class="mt-1 w-full border rounded-md p-2" required>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Kontak Sebelumnya</label>
+        <input type="number" name="previous" class="mt-1 w-full border rounded-md p-2" required>
+      </div>
+
+      <!-- Kategorikal -->
+      <div>
+        <label class="block text-sm font-medium">Pekerjaan</label>
+        <select name="job" class="mt-1 w-full border rounded-md p-2">
+          <option value="admin.">Administrasi</option>
+          <option value="technician">Teknisi</option>
+          <option value="services">Pelayanan</option>
+          <option value="management">Manajemen</option>
+          <option value="retired">Pensiunan</option>
+          <option value="blue-collar">Pekerja Lapangan</option>
+          <option value="unemployed">Pengangguran</option>
+          <option value="entrepreneur">Wiraswasta</option>
+          <option value="housemaid">Asisten Rumah Tangga</option>
+          <option value="self-employed">Pekerja Mandiri</option>
+          <option value="student">Pelajar</option>
+          <option value="unknown">Tidak Diketahui</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Status Pernikahan</label>
+        <select name="marital" class="mt-1 w-full border rounded-md p-2">
+          <option value="married">Menikah</option>
+          <option value="single">Lajang</option>
+          <option value="divorced">Cerai</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Pendidikan</label>
+        <select name="education" class="mt-1 w-full border rounded-md p-2">
+          <option value="primary">SD</option>
+          <option value="secondary">SMP/SMA</option>
+          <option value="tertiary">Perguruan Tinggi</option>
+          <option value="unknown">Tidak Diketahui</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Status Kredit Bermasalah</label>
+        <select name="default" class="mt-1 w-full border rounded-md p-2">
+          <option value="no">Tidak</option>
+          <option value="yes">Ya</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Memiliki Kredit Rumah?</label>
+        <select name="housing" class="mt-1 w-full border rounded-md p-2">
+          <option value="no">Tidak</option>
+          <option value="yes">Ya</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Memiliki Pinjaman Pribadi?</label>
+        <select name="loan" class="mt-1 w-full border rounded-md p-2">
+          <option value="no">Tidak</option>
+          <option value="yes">Ya</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Jenis Kontak</label>
+        <select name="contact" class="mt-1 w-full border rounded-md p-2">
+          <option value="cellular">Handphone</option>
+          <option value="telephone">Telepon Rumah</option>
+          <option value="unknown">Tidak Diketahui</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Bulan</label>
+        <select name="month" class="mt-1 w-full border rounded-md p-2">
+          <option value="jan">Januari</option>
+          <option value="feb">Februari</option>
+          <option value="mar">Maret</option>
+          <option value="apr">April</option>
+          <option value="may">Mei</option>
+          <option value="jun">Juni</option>
+          <option value="jul">Juli</option>
+          <option value="aug">Agustus</option>
+          <option value="sep">September</option>
+          <option value="oct">Oktober</option>
+          <option value="nov">November</option>
+          <option value="dec">Desember</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Hasil Kontak Sebelumnya</label>
+        <select name="poutcome" class="mt-1 w-full border rounded-md p-2">
+          <option value="success">Berhasil</option>
+          <option value="failure">Gagal</option>
+          <option value="other">Lainnya</option>
+          <option value="unknown">Tidak Diketahui</option>
+        </select>
+      </div>
+
+      <!-- Submit -->
+      <div class="col-span-2 flex justify-center mt-4">
+        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+          Prediksi
+        </button>
+      </div>
+    </form>
+
+    {% if result %}
+    <div class="mt-6 p-4 bg-green-100 text-green-800 rounded-md text-center">
+        <h3 class="text-lg font-semibold">{{ result }}</h3>
+
+        {% if class_probs %}
+        <div class="mt-4">
+            <h4 class="font-semibold mb-2">Probabilitas:</h4>
+            <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-gray-200">
+                <th class="px-4 py-2">Kelas</th>
+                <th class="px-4 py-2">Persentase</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td class="border px-4 py-2">Tidak Melakukan Deposito</td>
+                <td class="border px-4 py-2">{{ class_probs["no"] }}%</td>
+                </tr>
+                <tr>
+                <td class="border px-4 py-2">Melakukan Deposito</td>
+                <td class="border px-4 py-2">{{ class_probs["yes"] }}%</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
