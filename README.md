@@ -1,7 +1,7 @@
 # 🏦 Aplikasi Prediksi Deposito Bank
 
 Aplikasi ini adalah implementasi **Decision Tree** untuk memprediksi kemungkinan nasabah melakukan **deposito berjangka** berdasarkan data nasabah bank.
-Dilengkapi dengan **tampilan UIa berbasis Flask** sehingga user dapat langsung menginput data dan melihat hasil prediksi beserta probabilitasnya.
+Dilengkapi dengan **tampilan UI berbasis Flask** sehingga user dapat langsung menginput data dan melihat hasil prediksi beserta probabilitasnya.
 
 ---
 
